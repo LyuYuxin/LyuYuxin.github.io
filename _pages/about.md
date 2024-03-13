@@ -1,49 +1,43 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+-----
+**我曾经是一位自动驾驶感知算法工程师，就职于某头部自动驾驶重卡公司,目前正在积极寻求3D感知/BEV方向相关的读博/研究助理/实习交流的机会。**
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+我在2023年6月硕士毕业于东南大学软件学院，导师为路小波教授。读研期间，我曾连续两年获得研究生学业奖学金，并被评为“东南大学三好研究生”。我曾出于兴趣参加过华为软件精英挑战赛，solo取得江山赛区二等奖。此前，我于2020年毕业于电子科技大学计算机学院。
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+我的研究兴趣是什么？
+-----
+包括但不限于：Representation learning、3D Perception(including camera-based/Lidar-based or fusion)、Knowledge distillation，etc. 
+之所以列举这些，只是因为我有一定的前置知识，有相关经验，对于研究领域我是开放的，**有用、有价值**的研究我都愿意做，看具体情况。
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+做研究这件事，我有哪些基础？我有哪些相关科研及工程项目经历？
+-----
+### 我对计算机视觉的基础任务（如分类、检测、分割等）有一定认识。曾有多种独立项目经验及科研经历：
+- 在研二暑假，基于个人兴趣，我进入某头部自动驾驶重卡公司进行实习，开展**基于Lidar的3D感知**相关工作，与当时的mentor Chunming Wang一起设计了一种基于时序数据前融合及cross-frame axial-attention的PointPillars改进方案，并获得了一定的性能提升。
+  硕士毕业后，我以**超过50w的special offer**正式加入该公司，在车道线组从事自动驾驶量产相关工作，包括Event Mining、道路场景建模等。在leader Chao Wang的带领下，**独立负责**高速护栏建模功能，经过不断试错，最终采用了一种基于前视双目的深度估计方案，并**一人完成了从场景定义、标注guideline设计、样本采集、模型构建、模型训练、模型测试、推理时转化、后处理等上下游全链路工作。并在实车路测取得了预期效果。**
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+- 进入自动驾驶行业之前，从研一暑假开始，我在导师合作企业南京恩博科技有限公司独立开展“野生动物识别”的项目工作，并基于此项目完成了毕业论文《基于深度学习的野生动物识别算法研究》。通过对相关领域的文献调研，结合数据集实际情况，我基于YOLOX设计了一种兼具速度和性能的单目识别方案。相比于基准方法，该方案包括三点创新：
+1. 基于RepVGG、RepLKNet等方法引入的结构重参数技术，我**手工设计**了一个浅而宽的特征提取主干BroadNet，相比于baseline网络DarkNet，该网络有效感受野更大，并大幅减少了推理时参数量、计算量，在公司的野生动物数据集上表现出优异性能。
+2. 对空间-通道混合注意力CBAM进行了结构上的改进，并将其引入到特征融合网络FPN中，进一步提升性能。
+3. 对模型整体网络进行轻量化，并设计了一种注意力引导的混合蒸馏方法，以降低轻量化过程中的性能损失。
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+*总体来说，我享受按自己的思路手工构建一个神经网络，并通过实验证明它有效的过程。由于长期一人做项目，我具备较强的快速学习能力，可以基本无障碍进行文献调研及复现，有独立解决大部分工程问题的能力。我对深度学习环境配置很熟悉，已经掌握了很多常用开发工具，包括但不限于：linux、k8s、docker、git、ssh、conda、python、pdb、pytorch、opencv、numpy、tensorboard等。*
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+我想从读博做研究这件事中得到什么？
+-----
+1. 我的最终目标是通过4-5年的时间，成为一位感知（子）领域的技术专家，既拥有前沿的学术视野及研究品味，也有解决实际问题的能力。
+2. **做一些对业界有价值的研究。**我看好自动驾驶行业的长期发展，希望自己能够给为这个行业做出一些贡献，有一些影响力。我对自己日后工作的期望：**简单优雅的，而非晦涩难懂的**，**有实用价值的，而非空中楼阁的**。
+3. **在一个科研氛围良好的课题组，发表顶级论文。**由于研究生读了专硕，导师让我长期呆在公司实习，写论文方面投入精力不多，也未受过太多科研指导。除了学位论文及研三随手写的一篇EI，用来满足专硕的毕业条件外，没有顶会顶刊的投稿、rebuttal、录用经历。所以**我希望到相关方向的前沿课题组做研究，初期形式上可以是实习/研究助理，目的是培养自己的科研嗅觉及写作能力，后期希望读博**。
 
-**Markdown generator**
-
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+已经有一份高薪工作，为什么又想做研究？
+-----
+几方面原因：
+1. *对科研工作的向往。*由于导师培养方式等原因，我从研一上完课的暑假开始，长期呆在公司里（事实上，我几乎从未在实验室环境待过），**我希望从事一份更能发挥创造性 or 更加“研究”而非“工程”的工作，希望可以关注最新方案，解决前沿问题**。（算法工程师不够创造性吗？算法工程师需要一定的创造性，但要做的事情太多，不够聚焦）。
+2. *个人逻辑与公司逻辑的冲突。*公司面临市场竞争，生存逻辑决定了它一定是产品导向而非技术导向的，技术必然是为产品服务的。由于软硬件的成本资源限制，工业界多采用稳定、可靠的技术方案。而作为技术方案的构建者/实现者/螺丝钉，一位算法工程师的主要注意力集中在经过测试的线上方案上，解决该方案落地时存在的各种问题。然而，**我对解决某一抽象子领域的问题，而非某一具象单一业务功能问题这件事情更感兴趣，换句话说，我更希望能对某一领域的基础算法做出提升，而非增量式工程调优。**
+3. *在公司里技术积累需要额外精力。*随着自驾量产业务的爆发，我认为大部分算法工程师工作事实上会变成体力劳动，如不少公司存在专门的issue团队，部分公司12点以后下班等。而**技术积累通常需要在干完活后完成，我个人精力有限，因此希望专门花时间进行深造**。
