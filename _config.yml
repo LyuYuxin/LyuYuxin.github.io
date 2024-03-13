@@ -12,9 +12,9 @@ title                    : "About Me"
 title_separator          : "-"
 name                     : &name "Yuxin Lyu"
 description              : &description "我曾在某头部自动驾驶重卡公司工作，担任算法工程师的职位，目前正在积极寻求自动驾驶感知方向的研究助理/读博机会."
-url                      : https://YuxinLyu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://lyuyuxin.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "YuxinLyu/YuxinLyu.github.io"
+repository               : "lyuyuxin/lyuyuxin.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
